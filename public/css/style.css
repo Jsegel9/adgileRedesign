@@ -81,3 +81,16 @@ header {
     top: 20rem;
     right: 2rem;
 }
+
+#aboutImg{
+    float: left;
+}
+
+#aboutText{
+position: relative;
+top: 11rem;
+}
+
+#about{
+    position: absolute;
+}
