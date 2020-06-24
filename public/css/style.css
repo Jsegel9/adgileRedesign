@@ -162,3 +162,7 @@ border-right: 2px #2baffa solid;
     left: 7rem;
     width: fit-content;
 }
+
+#mgordon, #mstrahan, #flan, #tshea{
+    width: 236px;
+}
