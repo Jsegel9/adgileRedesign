@@ -137,3 +137,28 @@ border-right: 2px #2baffa solid;
     background: rgb(43,175,250);
     background: linear-gradient(180deg, rgba(43,175,250,1) 0%, rgba(255,255,255,1) 80%);
 }
+
+#teamHeadline{
+    position: relative;
+    top: 5rem;
+    left: 38%;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    width: fit-content;
+    background-color: #FFFFFC;
+    border-radius: 2rem;
+    border-top: #2baffa  outset 2px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+-moz-box-shadow: 0 10px 6px -6px #777;
+     box-shadow: 0 10px 6px -6px #777;
+}
+
+#teamCard{
+    position: relative;
+    top: 8rem;
+    margin: 1rem;
+    left: 7rem;
+    width: fit-content;
+}
