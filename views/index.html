@@ -64,30 +64,34 @@
                 <h1>Meet The <span style="color: #2baffa;">Team</span></h1>
             </div>
             <div class="row">
-
+               
                 <div id="teamCard">
                     <img src="img/mitchellgordon.webp">
-                    <a href="#mgordon" data-toggle="collapse" role="button"aria-expanded="false" aria-controls="collapseExample">
+                 <div id="cardText">
+                    <a href="#mgordon" data-toggle="collapse" role="button"aria-expanded="false" aria-controls="collapseExample" id="cardA">
                     <h2>Mitchell Gordon</h2>
                     <h3 style="text-align: center;">CEO</h3>
                 </a>
+                </div>
                 <div class="collapse" id="mgordon">
-                    <div class="card card-body">
-                        Corporate executive, investor and investment banker for over 35 years.  Previously President and CFO, Cambridge Capital Acquisition Corporation (NASADAQ:CAMB), 
+                    <div class="card card-body" style="text-align: center;">
+                        Corporate executive, investor and investment banker for over 35 years. <br> Previously President and CFO, Cambridge Capital Acquisition Corporation (NASADAQ:CAMB), <br>
 
-CFO, Interpool Inc. (NYSE:IPX), Partner and Global Co-Head of the Transportation Investment Banking Group at Salomon Smith Barney.
+CFO, Interpool Inc. (NYSE:IPX),<br> Partner and Global Co-Head of the Transportation Investment Banking Group at Salomon Smith Barney.
                       </div>
                 </div>
                 </div>
 
                 <div id="teamCard">
                     <img src="img/MS headshot.webp">
-                    <a href="#mstrahan" data-toggle="collapse" role="button"aria-expanded="false" aria-controls="collapseExample">
+                    <div id="cardText" style="left: 0rem;">
+                    <a href="#mstrahan" data-toggle="collapse" role="button"aria-expanded="false" aria-controls="collapseExample" id="cardA">
                     <h2>Marc Strachan</h2>
                     <h3 style="text-align: center;">CMO</h3>
                 </a>
+                </div>
                 <div class="collapse" id="mstrahan">
-                    <div class="card card-body">
+                    <div class="card card-body" style="text-align: center;">
                         Proven, results driven, senior level marketing and advertising executive, with experience across
 multiple categories of business. Chairman of ADCOLOR, inc. Previously Chief Client Office (CCO) at Publicis.Sapient and Director of Brand Marketing at Diageo.
                       </div>
@@ -96,12 +100,14 @@ multiple categories of business. Chairman of ADCOLOR, inc. Previously Chief Clie
 
                 <div id="teamCard">
                     <img src="img/flan.webp">
-                    <a href="#flan" data-toggle="collapse" role="button"aria-expanded="false" aria-controls="collapseExample">
+                    <div id="cardText">
+                    <a href="#flan" data-toggle="collapse" role="button"aria-expanded="false" aria-controls="collapseExample" id="cardA">
                     <h2>Max Flannery</h2>
                     <h5 style="text-align: center;">Co-Founder and President</h5>
                 </a>
+                </div>
                 <div class="collapse" id="flan">
-                    <div class="card card-body">
+                    <div class="card card-body" style="text-align: center;">
                         Creative problem solver and passionate entrepreneur with prior experience in financial and strategic consulting. Max graduated from Miami University's Farmer School of Business with degrees in Finance and Accounting.
                       </div>
                 </div>
@@ -109,12 +115,14 @@ multiple categories of business. Chairman of ADCOLOR, inc. Previously Chief Clie
 
                 <div id="teamCard">
                     <img src="img/tomshea.webp">
-                    <a href="#tshea" data-toggle="collapse" role="button"aria-expanded="false" aria-controls="collapseExample">
+                    <div id="cardText" style="right: 0rem;">
+                    <a href="#tshea" data-toggle="collapse" role="button"aria-expanded="false" aria-controls="collapseExample" id="cardA">
                     <h2>Tom Shea</h2>
                     <h5 style="text-align: center;">Co-Founder and COO</h5>
                 </a>
+                    </div>
                 <div class="collapse" id="tshea">
-                    <div class="card card-body">
+                    <div class="card card-body" style="text-align: center;">
                         Detail-oriented tech wiz with past experience as a full stack developer and operation manager. Tom is currently enrolled at the University of Chicago's Booth School of Business. Tom holds a degree in Finance, Computer Science, & Chinese from Boston College's Carroll School of Management.
                       </div>
                 </div>
@@ -122,7 +130,18 @@ multiple categories of business. Chairman of ADCOLOR, inc. Previously Chief Clie
 
             </div>
         </div>
-        <div id="contact"></div>
+        <div id="contact">
+            <img src="img/apple.webp" alt="" id="contactImage">
+            <div id="contactForm">
+                <form action="mailto:example@adgile.co">
+                <input type="text" id="name" name="name" value="Name...">
+                <input type="email" id="email" name="email" value="Email..."><br><br>
+                <input type="text" id="subject" name="subject" value="Subject..." style="width: 100%;"><br><br>
+                <input type="text" id="message" name="message" value="Enter a short message..." style="width: 100%; height: 6rem;"><br><br>
+                <input type="submit" value="submit">
+            </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

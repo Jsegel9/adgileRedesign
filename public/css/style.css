@@ -158,11 +158,53 @@ border-right: 2px #2baffa solid;
 #teamCard{
     position: relative;
     top: 8rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     left: 7rem;
     width: fit-content;
+    /* background-color: lawngreen; */
+    padding: 1rem 2rem 1rem 2rem;
+    box-sizing: content-box;
+    /* border-top: #2baffa solid 2px; */
+    /* border-right: #2baffa solid 2px; */
+    /* border-left: #2baffa solid 2px; */
+    /* background-color: #FFFFFC; */
 }
 
 #mgordon, #mstrahan, #flan, #tshea{
     width: 236px;
+}
+
+#cardText{
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem .5rem 5px .5rem;
+    background-color: #2baffa;
+    /* color: #FFFFFC; */
+    /* border-radius: 2rem; */
+    text-align: center;
+    border: solid 2px #FFFFFC;
+}
+
+#cardA{
+    color: #FFFFFC;
+}
+
+#cardA:hover{
+    text-decoration: none;
+    color: #2baffa;
+}
+
+#cardText:hover{
+    background-color: #FFFFFC;
+    border: #2baffa 2px solid;
+    /* border-radius: 2rem; */
+}
+
+#contactImage{
+    float: left;
+}
+
+#contactForm{
+    float: left;
 }
