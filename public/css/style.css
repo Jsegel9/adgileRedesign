@@ -16,32 +16,36 @@ header {
     margin-top: 100px;
 }
 
-#homeHd, #aboutHd{ 
-    color: green;
+#homeHd, #aboutHd, #marketsHd, #teamHd, #contactHd{ 
+    color: #2baffa;
     -webkit-transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
     display: inline-block;
     text-decoration:none;
     position: relative;
-    margin: 20px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
    
 }
 
-#homeHd:hover, #aboutHd:hover {
+#homeHd:hover, #aboutHd:hover, #marketsHd:hover, #teamHd:hover, #contactHd:hover {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
-    color: blue;
+    color: #2baffa;
 }
 
- #homeHd::before, #aboutHd::before{
+ #homeHd::before, #aboutHd::before, #marketsHd::before, #teamHd::before, #contactHd::before{
     position: absolute;
-	 top: -2px; 
+	 top: -20px; 
 	left: -7px;
 	box-sizing: content-box;
 	padding: 0 5px;
 	width: 100%;
-	height: 100%;
-	border: 2px solid blue ;
+	height: 68px;
+    border-right: 2px solid #2baffa ;
+    border-left: 2px solid #2baffa ;
+    border-top: 2px solid #2baffa ;
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
@@ -50,7 +54,7 @@ header {
 	transform: scale(0.9);  
 }
 
-#homeHd:hover::before, #aboutHd:hover::before{
+#homeHd:hover::before, #aboutHd:hover::before, #marketsHd:hover::before, #teamHd:hover::before, #contactHd:hover::before    {
     opacity: 1;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -78,8 +82,8 @@ header {
 #homeText{
     position: absolute;
     color: white;
-    top: 20rem;
-    right: 2rem;
+    top: 32rem;
+    right: 20rem;
 }
 
 #aboutImg{
@@ -207,4 +211,54 @@ border-right: 2px #2baffa solid;
 
 #contactForm{
     float: left;
+    background-color: #2baffa;
+    padding: 2rem;
+    position: relative;
+    top: 12rem;
+}
+
+#contactHeadline{
+    position: relative;
+    top: 3rem;
+    left: 39%;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    width: fit-content;
+    background-color: #FFFFFC;
+    border-radius: 2rem;
+    border-left: solid 2px #2baffa;
+    border-right: solid 2px #2baffa;
+    border-top: #2baffa solid 2px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+}
+footer{
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    height: 2rem;
+    background-color: #777;
+    opacity: .5;
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#learnBut{
+    text-decoration: none;
+    color: #FFFFFC;
+}
+
+button{
+    background-color: #2baffa;
+    border: none;
+    color: #FFFFFC;
+    border-radius: 3px;
+    padding: 1rem;
+    font-size: 25px;
 }
