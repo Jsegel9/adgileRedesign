@@ -66,6 +66,7 @@ header {
     background-size: cover;
     width: 100%;
     height: 58rem;
+    min-width: 1000px;
 }
 /* .container{
     margin-left: 0rem;
@@ -109,6 +110,7 @@ border-right: 2px #2baffa solid;
     height: 40rem;
 }
 #markets{
+    min-width: 1000px;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(43,175,250,1) 100%);
 }
@@ -137,6 +139,7 @@ border-right: 2px #2baffa solid;
 }
 
 #team{
+    min-width: 1000px;
     height: 50rem;
     background: rgb(43,175,250);
     background: linear-gradient(180deg, rgba(43,175,250,1) 0%, rgba(255,255,255,1) 80%);
@@ -291,6 +294,15 @@ button{
             margin-right: 10rem;
         }
     }
+    /* Markets first break 1380 */
+   @media only screen and (max-width: 1380px){
+       #marketImg{
+           width: 50%;
+           height: auto;
+
+       }
+   } 
+
 /* second break for about 1232 */
 
 @media only screen and (max-width: 1232px){
@@ -298,15 +310,73 @@ button{
         width: 60%;
         height: auto;
     }
+    /* second market break 1175 */
+@media only screen and (max-width: 1175px){
+    #marketImg{
+        width: 40%;
+        height: auto;
+    }
+    #markets{
+        height: 34rem;
+    }
+}
 
-    /* third break 911 */
-    @media only screen and (max-width: 911px){
+/* Home div text needs a tweak at 1075 */
+@media only screen and (max-width: 1075px){
+    #homeText{
+        right: 15rem;
+    }
+}
+
+    /* third break 1000 
+        fix home text in this breakpoint too
+    */
+    @media only screen and (max-width: 1000px){
         #aboutImg{
-            width: 50%;
+            width: 100%;
             height: auto;
+        }
+        #aboutText{
+            width: 80%;
+            left: 6rem;
+        }
+        #about{
+            height: 70rem;
         }
     }
 
+    /* hometext second break 968 */
+@media only screen and (max-width: 968px){
+    #homeText{
+        top: 16rem;
+        right: 10rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 50%;
+    }
+    #home{
+        height: 40rem;
+    }
+}
+
+/* header starts messing up at 996 */
     
-   
+   /* team breaks to single file at 938 */
+
+   /* clear market image at 912 */
+
+   @media only screen and (max-width: 912px){
+       #marketImg{
+           display: none;
+       }
+       #marketText{
+           width: 35rem;
+       }
+       #homeText{
+           display: none;
+       }
+       #aboutImg{
+           /* width: 50%; */
+       }
+   }
 }
