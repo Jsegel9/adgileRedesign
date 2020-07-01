@@ -12,9 +12,9 @@ header {
     z-index: 1;
 }
 
-.container{
+/* .container{
     margin-top: 100px;
-}
+} */
 
 #homeHd, #aboutHd, #marketsHd, #teamHd, #contactHd{ 
     color: #2baffa;
@@ -261,4 +261,52 @@ button{
     border-radius: 3px;
     padding: 1rem;
     font-size: 25px;
+}
+
+/* Media Queries for Mobile */
+
+/* First break @ 1480px wide moves about text to next row */
+
+@media only screen and (max-width: 1480px){
+    #aboutText{
+        /* float: none; */
+        /* width: 16rem; */
+    }
+    #about, #markets{
+        /* margin-bottom: 5rem; */
+        /* display: flex; */
+    }
+    #aboutImg{
+        width: 70%;
+        height: auto;
+    }
+}
+
+/* this fixes issue with team and main background up until 945 new break */
+ @media only screen and (max-width: 1435px){
+     #team{
+         height: 65rem;
+     }
+        #teamCard{
+            margin-right: 10rem;
+        }
+    }
+/* second break for about 1232 */
+
+@media only screen and (max-width: 1232px){
+    #aboutImg{
+        width: 60%;
+        height: auto;
+    }
+
+    /* third break 911 */
+    @media only screen and (max-width: 911px){
+        #aboutImg{
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    
+   
 }
